@@ -1,0 +1,30 @@
+{
+  "name": "annasetu",
+  "version": "1.0.0",
+  "description": "AnnaSetu - Food Recovery and Emergency Relief Redistribution Bridge",
+  "main": "backend/src/server.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "npm --prefix backend install && npm run sync:frontend",
+    "sync:frontend": "node -e \"const fs=require('fs'); if(!fs.existsSync('backend/public')) fs.mkdirSync('backend/public', {recursive:true}); fs.cpSync('frontend', 'backend/public', {recursive:true}); console.log('✅ Frontend synchronized to backend/public');\"",
+    "postinstall": "npm --prefix backend install",
+    "start": "node backend/src/server.js",
+    "start:backend": "npm --prefix backend start",
+    "dev": "npm --prefix backend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "start:frontend": "npm --prefix frontend start",
+    "test": "npm --prefix backend test"
+  },
+  "keywords": [
+    "food-donation",
+    "relief",
+    "annasetu",
+    "express",
+    "postgresql",
+    "sqlite"
+  ],
+  "author": "AnnaSetu Team",
+  "license": "ISC"
+}

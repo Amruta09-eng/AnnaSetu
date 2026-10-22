@@ -1,0 +1,34 @@
+# Node Modules
+node_modules/
+backend/node_modules/
+
+# Environment Variables & Secrets (Keep .env.example safe)
+.env
+backend/.env
+.env.local
+.env.*.local
+
+# Databases & Runtime State
+*.db
+*.db-journal
+*.sqlite
+annasetu.db
+backend/annasetu.db
+backend/data/annasetu.db
+data/
+
+# Generated build files
+backend/public/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

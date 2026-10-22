@@ -1,0 +1,18 @@
+{
+  "name": "annasetu-frontend",
+  "version": "1.0.0",
+  "description": "AnnaSetu Modern Frontend - Bridging Surplus Food and Community Relief",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "food-donation",
+    "annasetu",
+    "frontend",
+    "pwa",
+    "relief"
+  ],
+  "author": "AnnaSetu Team",
+  "license": "ISC"
+}

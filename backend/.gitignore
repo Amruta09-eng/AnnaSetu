@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.db
+*.sqlite
+data/
+public/
+npm-debug.log*

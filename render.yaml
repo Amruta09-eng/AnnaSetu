@@ -1,0 +1,18 @@
+services:
+  # AnnaSetu Unified Full-Stack Web Service on Render
+  - type: web
+    name: annasetu
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_Tmvn9UPD3Gpy@ep-square-recipe-b4c9awo9-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require

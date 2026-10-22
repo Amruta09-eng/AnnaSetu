@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnnaSetu — Food Recovery & Emergency Relief Redistribution Bridge</title>
+  <meta name="description" content="AnnaSetu connects food donors, verified NGOs, volunteer logistics, and community beneficiaries to eliminate food waste and coordinate emergency relief.">
+  <meta name="keywords" content="food donation, surplus food, relief coordination, zero hunger, ngo logistics, volunteer dispatch">
+  <meta property="og:title" content="AnnaSetu — Food Recovery & Emergency Relief Redistribution Bridge">
+  <meta property="og:description" content="Connecting donors, NGOs, volunteers, and relief communities to redistribute essential resources.">
+  <meta name="theme-color" content="#059669">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌾</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <header class="navbar">
+    <a href="javascript:void(0)" class="brand" onclick="renderApp()">
+      <span class="brand-icon">🌾</span>
+      <span class="brand-name">AnnaSetu</span>
+      <span class="brand-badge">Relief Bridge</span>
+    </a>
+    <div class="nav-actions" id="nav-actions">
+      <!-- Dynamic role controls and navigation rendered here -->
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main id="app-root" class="container" role="main">
+    <!-- Reactive Views (Landing / Dashboards / Forms) rendered here -->
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="app-footer">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;">
+      <div>
+        <b>🌾 AnnaSetu</b> · Bridging Resources with Those in Need · CSE3132 Software Engineering Project
+      </div>
+      <div>
+        <span style="font-size: 0.8rem; opacity: 0.85;">Enterprise 3-Tier Architecture · Node.js 24 · Express · PostgreSQL (Neon)</span>
+        <button onclick="promptChangeApiUrl()" style="margin-left: 10px; background: transparent; border: 1px solid rgba(255,255,255,0.4); color: inherit; border-radius: 4px; padding: 2px 7px; font-size: 0.72rem; cursor: pointer;" title="Configure Backend API URL">⚙️ API URL</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
